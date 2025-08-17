@@ -6,6 +6,9 @@ from mysql.connector import Error
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+@app.route('/')
+def home():
+    return "Hello, Flask!"
 
 # ---------- MySQL Connection ----------
 def get_db_connection():
