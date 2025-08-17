@@ -13,11 +13,11 @@ def home():
 # ---------- MySQL Connection ----------
 def get_db_connection():
     return mysql.connector.connect(
-        host="sql.freedb.tech",
+        host="pravanjan.cbw648g4i0wa.eu-north-1.rds.amazonaws.com",
         port=3306,
-        user="freedb_Pravanjan",
-        password="9$3C7gBkMG?uw4y",
-        database="freedb_lidata"
+        user="pravanjan09",
+        password="Raja0725",
+        database="lidata"
     )
 
 # ---------- LOGIN ----------
