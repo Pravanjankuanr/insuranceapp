@@ -13,11 +13,11 @@ def home():
 # ---------- MySQL Connection ----------
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",
+        host="sql.freedb.tech",
         port=3306,
-        user="root",
-        password="@Raja12",
-        database="lidata"
+        user="freedb_Pravanjan",
+        password="9$3C7gBkMG?uw4y",
+        database="freedb_lidata"
     )
 
 # ---------- LOGIN ----------

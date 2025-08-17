@@ -34,7 +34,7 @@ class DeleteCustomerApp(tk.Frame):
             return
 
         try:
-            response = requests.get(f"http://127.0.0.1:5000/get_customer", params={"query": query})
+            response = requests.get(f"https://insuranceapp-6kjz.onrender.com/get_customer", params={"query": query})
             data = response.json()
 
             if response.status_code == 200 and data.get("success"):
@@ -71,7 +71,7 @@ class DeleteCustomerApp(tk.Frame):
 
         try:
             response = requests.delete(
-                "http://127.0.0.1:5000/delete_customer",
+                "https://insuranceapp-6kjz.onrender.com/delete_customer",
                 json={"query": self.found_customer_id}
             )
 

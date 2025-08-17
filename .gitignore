@@ -1,2 +1,6 @@
 myenv
 .venv
+CreateTable.py
+tempCodeRunnerFile.py
+__pycache__/
+Frontend/__pycache__/

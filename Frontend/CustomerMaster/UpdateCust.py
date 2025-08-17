@@ -41,7 +41,7 @@ class UpdateCustomerApp(tk.Frame):
 
         try:
             # CHANGED: use GET instead of POST
-            response = requests.get("http://127.0.0.1:5000/get_customer", params={"query": query})
+            response = requests.get("https://insuranceapp-6kjz.onrender.com/get_customer", params={"query": query})
             try:
                 data = response.json()
             except ValueError:

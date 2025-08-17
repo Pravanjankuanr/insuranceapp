@@ -26,7 +26,7 @@ class LoginPage(tk.Tk):
         password = self.password.get().strip()
 
         try:
-            response = requests.post("http://127.0.0.1:5000/login", json={
+            response = requests.post("https://insuranceapp-6kjz.onrender.com/login", json={
                 "username": user,
                 "password": password
             })
