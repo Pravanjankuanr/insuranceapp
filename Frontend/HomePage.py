@@ -1,18 +1,18 @@
-import win32event
-import win32api
-import winerror
+# import win32event
+# import win32api
+# import winerror
 import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
 
 
-mutex = win32event.CreateMutex(None, False, "my_unique_app_mutex_name")
+# mutex = win32event.CreateMutex(None, False, "my_unique_app_mutex_name")
 
-# If mutex already exists, another instance is running
-if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
-    print("already running.")
-    sys.exit(0)
+# # If mutex already exists, another instance is running
+# if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
+#     print("already running.")
+#     sys.exit(0)
 
 # Replace these with your actual modules
 from CustomerMaster.CreateCust import CustomerApp
